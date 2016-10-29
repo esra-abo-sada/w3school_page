@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<style>
+body{font-family: "Segoe UI",Arial,sans-serif;
+            margin: 0px;
+            padding: 0px;
+            }
+            .righttext{float: right;
+              vertical-align:center;
+              margin-right: 5px;
+            }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#4CAF50 ;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: white;
+    color: black;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+#clip {
+   height: 50px;
+     
+  }
+
+.vl{
+
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  margin: 0;
+        padding: 0;
+        width: 25%;
+        background-color: white;
+        height: 100%; /* Full height */
+      
+   }
+   .vl a{
+          display: block;
+          color: #000;
+          padding: 8px 16px;
+          text-decoration: none;
+      }
+
+      /* Change the link color on hover */
+      .vl a:hover {
+          background-color: #999999;
+          color: white;
+      }
+      .dropdown-content{float: left;}
+</style>
+</head>
+<body>
+<div >
+      <a href="Wschools.html"><img id="clip" src="W3schools.png"/></a>
+        
+        <p class="righttext">THE WORLD'S LARGEST WEB DEVELOPER SITE</p>
+      
+      </div>
+<ul>
+<li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn" onclick="myFunction()">TUTURIALS<i class="fa fa-caret-down" ></i></a>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+    
+  </li>
+   <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn" onclick="myFunction()">REFERENCES<i class="fa fa-caret-down" ></i></a>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+    
+  </li>
+ 
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn" onclick="myFunction()">EXAMPLES<i class="fa fa-caret-down" ></i></a>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+
+  </li>
+</ul>
+
+<div class="vl" >
+             <h4 style="padding: 8px 16px">HTML and CSS</h4>
+          
+           <p>  <a  href="#home">Learn HTML</a></p>
+            <p> <a  href="#news">Learn CSS</a></p>
+           <p>  <a  href="#contact">Learn W3.CSS</a></p>
+            <p> <a  href="#about">Learn colors</a></p>
+            <p> <a  href="#about">Learn Bootstrap</a></p>
+            <p> <a  href="#about">Learn icons</a></p>
+            <p> <a  href="#about">Learn Graphic</a></p>
+            <p> <a  href="#about">Learn How To</a></p>
+            <h4 style="padding: 8px 16px">Java Script</h4>
+          
+        </div>
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    for (var d = 0; d < dropdowns.length; d++) {
+      var openDropdown = dropdowns[d];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+</body>
+</html>
+
